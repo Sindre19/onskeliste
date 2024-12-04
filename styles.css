@@ -1,0 +1,102 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #343a40; /* Dark grey background */
+    color: #ffffff; /* White text color */
+    transition: background-color 0.3s ease;
+    overflow-y: auto; /* Allow vertical scrolling when content overflows */
+}
+
+header, nav, main, footer {
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Favorite Link Styling */
+.favorite-link {
+    display: block;
+    background-color: #495057; /* Dark grey for favorite links */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.favorite-link:hover {
+    transform: translateY(-5px);
+    background-color: #596b75; /* Dark grey with a tint for hover effect */
+}
+
+.favorite-link div {
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.favorite-link h3 {
+    margin-top: 0;
+    color: #17a2b8; /* Light blue for link titles */
+}
+
+.favorite-link p {
+    color: #adb5bd; /* Light grey for descriptions */
+    margin-bottom: 5px;
+}
+
+.favorite-link .url {
+    color: #007bff; /* Blue for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.favorite-link .url:hover {
+    text-decoration: underline;
+    color: #17a2b8; /* Light blue for hover effect on links */
+}
+
+/* Styling for Headings */
+h1, h2, h3 {
+    color: #17a2b8; /* Light blue for headings */
+    transition: color 0.3s ease;
+}
+
+/* Styling for Links in Navigation */
+nav a {
+    color: #ffffff; /* White for navigation links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #17a2b8; /* Light blue for hover effect on navigation links */
+    animation: shake 0.5s ease; /* Add shake animation */
+}
+
+/* Shake Animation for Navigation Links */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+/* Styling for Footer */
+footer {
+    background-color: #495057; /* Dark grey for footer background */
+    color: #ffffff; /* White text color */
+    text-align: center;
+    padding: 10px;
+}
